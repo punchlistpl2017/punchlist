@@ -228,3 +228,5 @@ table.dataTable thead th{font-weight:normal !important;}
   .projectsnumber .ibox-title h5 {color:#fff;}
   
   .footer h5 {color:#000; font-weight:normal;}
+  
+  .sweet-alert button.cancel {background-color:red !important;}
