@@ -16,7 +16,10 @@
     <link href="css/custom.css" rel="stylesheet">
 	<!--checkbox and radio button-->
 	<link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-
+	<style>
+		.form-group {margin-bottom:10px;}
+		.MarginBottom12 {margin-bottom:12px;}
+	</style>
 </head>
 
 <body class="gray-bg">
@@ -42,15 +45,122 @@
 							Remember me
 						</label>
 					</div>
-					<a href="#" class="pull-right"><small>Forgot password?</small></a>
+					<a href="#" data-toggle="modal" data-target="#ForgotPwd" class="pull-right"><small>Forgot password?</small></a>
 				</div>
-                <p class="text-muted text-left"><small>Do not have an account? <a href="#" class=""><strong>click here</strong></a></small></p>
+                <p class="text-muted text-left"><small>Do not have an account? <a href="#" data-toggle="modal" data-target="#RegisterPopup" class=""><strong>click here</strong></a></small></p>
             </form>
            <p class="m-t"> <small>PunchList &copy; 2017</small> </p>
         </div>
     </div>
 </div>
 
+<div class="modal inmodal" id="RegisterPopup" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content animated fadeIn">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h3 class="modal-title">Register</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="m-t" role="form" action="index.html">
+                 <div class="row">
+            <div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+                <label for="firstname" class="sr-only"></label>
+                <input id="firstname" class="form-control" type="text" name="firstname"
+                       title="Enter first name"
+                       placeholder="First name"/>
+            </div>
+
+            <div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+                <label for="lastname" class="sr-only"></label>
+                <input id="lastname" class="form-control" type="text" name="lastname"
+                       title="Enter last name"
+                       placeholder="Last name"/>
+            </div>
+                      <div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+                <label for="lastname" class="sr-only"></label>
+                <input id="email" class="form-control" type="email" name="lastname"
+                       title="Enter last name"
+                       placeholder="E-mail"/>
+            </div>
+			<div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+                <label for="username" class="sr-only"></label>
+                <input id="usename" class="form-control" type="text" name="username"
+                       title="Enter Username"
+                       placeholder="Username"/>
+            </div>
+                      <div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+                <label for="password" class="sr-only"></label>
+                <input id="pwd" class="form-control" type="password" name="password"
+                       title="Enter last name"
+                       placeholder="Password"/>
+            </div>
+                      <div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+                <label for="pwd" class="sr-only"></label>
+                <input id="cpwd" class="form-control" type="password" name="password"
+                       title="Enter Password"
+                       placeholder="Confirm Password"/>
+            </div>
+                     <div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+                <label for="phone" class="sr-only"></label>
+                <input id="phone" class="form-control" type="text" name="phone"
+                       title="Enter Phone Number"
+                       placeholder="Phone Number"/>
+            </div>
+			<div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6 MarginBottom12" id="data_1">
+                                <div class="input-group date">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="Date of Birth">
+                                </div>
+            </div>
+			<div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6 text-left" id="gender">
+				<label for="gender" class="text-left">Gender</label>
+				<div class="radio radio-info radio-inline">
+                                            <input type="radio" id="inlineRadio1" value="option1" name="radioInline">
+                                            <label for="inlineRadio1"> Male </label>
+                                        </div>
+                                        <div class="radio radio-info radio-inline">
+                                            <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                            <label for="inlineRadio2"> Female </label>
+                                        </div>
+            </div>
+                     <div class="form-group col-xs-12 col-md-6 col-lg-6 col-sm-6">
+     <label for="comment" class="sr-only"></label>
+     <select class="form-control m-b" name="account">
+                                        <option>-- Select Role --</option>
+                                        <option>Contractor</option>
+                                        <option>User</option>
+                                    </select>
+     </div>
+        </div>
+			   <div class="col-md-12 text-center center-block">
+                <button type="submit" class="btn theme-btn m-b">Register</button>
+				</div>
+				<div class="clearfix"></div>
+                 <!-- <p class="text-muted text-center"><small>Already have an account? <a href="#" class=""><strong>login</strong></a></small></p>   -->
+            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+	<div class="modal inmodal" id="ForgotPwd" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                                    <div class="modal-content animated fadeIn">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title">Forgot Password</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>If you forgotten your password you can reset here...</h4>
+			<form action="login.html">
+				<div class="form-group">
+					<input placeholder="Email" class="form-control" type="email">
+				</div>
+				<button type="submit" class="btn theme-btn m-b center-block">Submit</button>
+			</form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>

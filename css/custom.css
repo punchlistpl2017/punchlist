@@ -1,10 +1,10 @@
 /*Login custom css*/
-a, a:hover, a:focus {color:#5952dc;}
+a, a:hover, a:focus {color:#5952dc; outline:none;}
 
 #login {
     box-shadow: 0 0 10px #a5a5a5;
-    border-top: 2px solid #5952dc;
-    border-bottom: 2px solid #5952dc;
+    /* border-top: 2px solid #5952dc;
+    border-bottom: 2px solid #5952dc; */
     padding: 10px;
 }
 #login h3,h2,h1,h5,h6,h4 {color:#5952dc;}
@@ -230,3 +230,35 @@ table.dataTable thead th{font-weight:normal !important;}
   .footer h5 {color:#000; font-weight:normal;}
   
   .sweet-alert button.cancel {background-color:red !important;}
+  
+  /* 13-10-17 CSS */
+  .todo-list li {overflow:hidden;}
+  .todo-list p {font-size:13px; margin-bottom:5px; font-weight:600; color:#5952dc;}
+  .todo-list p i {margin-right:5px; font-size:14px; color:#5952dc;}
+  .small-txt {font-size:11px;}
+  .small-txt i {margin-right:5px;}
+  
+  /* 17-10-17 */
+  
+  .punchliststatus .ibox-content{overflow:visible;}
+  .punchliststatus .ibox-content .input-group {width:100%;}
+  .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -9px -14px;
+}
+
+.chosen-container-single .chosen-single div b {
+    background: url(../css/plugins/chosen/chosen-sprite.png) no-repeat 0px 7px;
+}
+.alert-dismissable .close, .alert-dismissible .close {right:5px;}
+.todo-list.small-list > li {padding-top:8px;}
+
+/* 23-10-17 */
+
+.inmodal .modal-header {padding:10px 15px;}
+.inmodal .modal-body {
+    padding: 20px 30px 10px 30px;
+}
+
+/* 24-10-17 */
+
+.profile-element .clear:hover {color:#fff;}
