@@ -1940,13 +1940,13 @@ div.dt-button-info {
   box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-  content: "ON";
+  content: "Activate";
   padding-left: 7px;
   background-color: #1AB394;
   color: #FFFFFF;
 }
 .onoffswitch-inner:after {
-  content: "OFF";
+  content: "Deactivate";
   padding-right: 7px;
   background-color: rgb(237, 85, 101);
   color: #fff;

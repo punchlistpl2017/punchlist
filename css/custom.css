@@ -160,9 +160,9 @@ table.dataTable thead th{font-weight:normal !important;}
 .btn-custom, .sweet-alert button {background-color:#5952dc !important; border:none; padding:5px 12px; border-radius:4px; color:#fff; margin-bottom:10px !Important;}
 .btn-custom:hover, .btn-custom:focus {color:#fff;}
 .ibox-content {overflow:hidden;}
-.onoffswitch {width:60px; height:22px;}
+.onoffswitch {width:80px; height:22px;}
 .onoffswitch-inner:before, .onoffswitch-inner:after {height:18px; line-height:20px;}
-.onoffswitch-switch {right:42px;}
+.onoffswitch-switch {right:62px;}
 	a {outline:none;}
 .sweet-alert .sa-icon.sa-warning .sa-body, .sweet-alert .sa-icon.sa-warning .sa-dot {background-color:red;}
 .sweet-alert .sa-icon.sa-warning {border-color:red;}
@@ -262,3 +262,6 @@ table.dataTable thead th{font-weight:normal !important;}
 /* 24-10-17 */
 
 .profile-element .clear:hover {color:#fff;}
+.edit {color:#ff7702;}
+.view {color:#5a53dc;}
+.delete {color:#d80000;}
